@@ -44,8 +44,11 @@ def main():
 
     individual_shares = calc_individual_shares(orders, tax_percent, tip_percent)
     total_bill = calc_total_bill(orders, tax_percent, tip_percent)
+    total_amount = sum(orders.values())
+    tip_amount = total_amount * (tip_percent / 100)
 
-    print(f"\nTotal bill: ${total_bill:.2f}")
+    print(f"\nTip ({tip_percent}%): ${tip_amount:.2f}")
+    print(f"Total bill: ${total_bill:.2f}")
     for diner, share in individual_shares.items():
         print(f"{diner} owes: ${share:.2f}")
 
