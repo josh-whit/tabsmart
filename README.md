@@ -32,7 +32,7 @@ TabSmart is a web application built with Python, Flask and HTML/CSS that helps l
 - Flask-WTF
 - WTForms
 
-Once installed, the program will run the Flask app the local http://127.0.0.1:5000 address. 
+Once installed, the program will run the Flask app on the local http://127.0.0.1:5000 address. 
 
 ## Future Improvements
 - Host app on web
