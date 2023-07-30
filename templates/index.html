@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Party Size</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>TabSmart</h1>
+        <p>Fill out info from your restaurant bill, and TabSmart <br> will tell you exactly how much everyone owes!</p>
+        <form method="POST">
+            {{ form.hidden_tag() }}
+            <p>
+                {{ form.num_diners.label }}<br>
+                {{ form.num_diners() }}
+            </p>
+            <p>{{ form.submit() }}</p>
+        </form>
+    </div>
+</body>
+</html>

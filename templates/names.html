@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diner Names</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <div class="container">
+        <form method="POST">
+            {{ form.hidden_tag() }}
+            {% for field in form if 'diner_' in field.name %}
+            <p>
+                {{ field.label }}<br>
+                {{ field() }}
+            </p>
+            {% endfor %}
+            <p>{{ form.submit() }}</p>
+        </form>
+    </div>
+</body>
+</html>

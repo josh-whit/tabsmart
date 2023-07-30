@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tax and Tip</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <div class="container">
+        <form method="POST">
+            {{ form.hidden_tag() }}
+            <p>
+                {{ form.tax_percent.label }}<br>
+                {{ form.tax_percent() }}
+            </p>
+            <p>
+                {{ form.tip_percent.label }}<br>
+                {{ form.tip_percent() }}
+            </p>
+            <p>{{ form.submit() }}</p>
+        </form>
+    </div>
+</body>
+</html>

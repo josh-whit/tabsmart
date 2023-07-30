@@ -1,0 +1,43 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    background-color: white;
+}
+
+form input[type="text"], form input[type="number"] {
+    margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+    margin-top: 20px;
+}
+
+.bill-details, .individual-shares {
+    padding: 20px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    background-color: #e9ecef;
+    margin: 10px 0;
+}
+
+.container {
+    width: 40%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
